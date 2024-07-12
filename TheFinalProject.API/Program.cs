@@ -1,5 +1,9 @@
 using TheFinalProject.core.ICommon;
+using TheFinalProject.core.IRepositories;
+using TheFinalProject.core.IServices;
 using TheFinalProject.infra.Common;
+using TheFinalProject.infra.Repositories;
+using TheFinalProject.infra.Services;
 
 namespace TheFinalProject.API
 {
@@ -18,9 +22,12 @@ namespace TheFinalProject.API
 
             builder.Services.AddScoped<IDbContext, DbContext>();
 
-            var app = builder.Build();
+            builder.Services.AddScoped<IVisaInfoRepository, VisaInfoRepository>();
+            builder.Services.AddScoped<IVisaInfoService, VisaInfoService>();
 
             // Configure the HTTP request pipeline.
+            var app = builder.Build();
+
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -30,7 +37,6 @@ namespace TheFinalProject.API
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
