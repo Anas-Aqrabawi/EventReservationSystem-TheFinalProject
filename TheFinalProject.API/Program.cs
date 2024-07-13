@@ -1,5 +1,9 @@
 using TheFinalProject.core.ICommon;
+using TheFinalProject.core.IRepositories;
+using TheFinalProject.core.IServices;
 using TheFinalProject.infra.Common;
+using TheFinalProject.infra.Repositories;
+using TheFinalProject.infra.Services;
 
 namespace TheFinalProject.API
 {
@@ -17,6 +21,13 @@ namespace TheFinalProject.API
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddScoped<IDbContext, DbContext>();
+
+            //REpository 
+            builder.Services.AddScoped<IHallRepository,HallRepository>();
+
+            //Services
+            builder.Services.AddScoped<IHallService,HallService>();
+
 
             var app = builder.Build();
 
