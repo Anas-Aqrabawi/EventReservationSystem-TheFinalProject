@@ -22,10 +22,14 @@ namespace TheFinalProject.API
 
             builder.Services.AddScoped<IDbContext, DbContext>();
 
+            //REpository 
+            builder.Services.AddScoped<IHallRepository,HallRepository>();
             builder.Services.AddScoped<IVisaInfoRepository, VisaInfoRepository>();
+
+            //Services
+            builder.Services.AddScoped<IHallService,HallService>();
             builder.Services.AddScoped<IVisaInfoService, VisaInfoService>();
 
-            // Configure the HTTP request pipeline.
             var app = builder.Build();
 
             if (app.Environment.IsDevelopment())
