@@ -9,6 +9,7 @@ namespace TheFinalProject.core.Data
         {
             Feedbacks = new HashSet<Feedback>();
             Halls = new HashSet<Hall>();
+            Reservations = new HashSet<Reservation>();
             Testimonials = new HashSet<Testimonial>();
         }
 
@@ -24,6 +25,7 @@ namespace TheFinalProject.core.Data
         public virtual Visainfo? Visainfo { get; set; }
         public virtual ICollection<Feedback> Feedbacks { get; set; }
         public virtual ICollection<Hall> Halls { get; set; }
+        public virtual ICollection<Reservation> Reservations { get; set; }
         public virtual ICollection<Testimonial> Testimonials { get; set; }
     }
 }

@@ -8,6 +8,7 @@ namespace TheFinalProject.core.Data
         public Hall()
         {
             Feedbacks = new HashSet<Feedback>();
+            Reservations = new HashSet<Reservation>();
         }
 
         public decimal HallId { get; set; }
@@ -38,5 +39,6 @@ namespace TheFinalProject.core.Data
         public virtual Status? Status { get; set; }
         public virtual User? User { get; set; }
         public virtual ICollection<Feedback> Feedbacks { get; set; }
+        public virtual ICollection<Reservation> Reservations { get; set; }
     }
 }

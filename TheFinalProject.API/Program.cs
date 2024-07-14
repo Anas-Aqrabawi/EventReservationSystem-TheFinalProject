@@ -62,6 +62,13 @@ namespace TheFinalProject.API
                 };
             });
 
+            //REpository 
+            builder.Services.AddScoped<IHallRepository,HallRepository>();
+
+            //Services
+            builder.Services.AddScoped<IHallService,HallService>();
+
+
             var app = builder.Build();
 
             if (app.Environment.IsDevelopment())
