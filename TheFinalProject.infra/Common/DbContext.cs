@@ -13,7 +13,7 @@ namespace TheFinalProject.infra.Common
 {
     public class DbContext: IDbContext
     {
-        private DbConnection _connection;
+        private DbConnection? _connection;
         private readonly IConfiguration _configuration;
 
         public DbContext(IConfiguration configuration)
