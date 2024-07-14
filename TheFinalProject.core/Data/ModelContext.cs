@@ -22,6 +22,7 @@ namespace TheFinalProject.core.Data
         public virtual DbSet<Feedback> Feedbacks { get; set; } = null!;
         public virtual DbSet<Hall> Halls { get; set; } = null!;
         public virtual DbSet<Homepage> Homepages { get; set; } = null!;
+        public virtual DbSet<Reservation> Reservations { get; set; } = null!;
         public virtual DbSet<Role> Roles { get; set; } = null!;
         public virtual DbSet<Status> Statuses { get; set; } = null!;
         public virtual DbSet<Testimonial> Testimonials { get; set; } = null!;
@@ -46,7 +47,7 @@ namespace TheFinalProject.core.Data
             modelBuilder.Entity<Aboutu>(entity =>
             {
                 entity.HasKey(e => e.AboutusId)
-                    .HasName("SYS_C008614");
+                    .HasName("SYS_C008835");
 
                 entity.ToTable("ABOUTUS");
 
@@ -59,7 +60,7 @@ namespace TheFinalProject.core.Data
             modelBuilder.Entity<Contactu>(entity =>
             {
                 entity.HasKey(e => e.ContactusId)
-                    .HasName("SYS_C008612");
+                    .HasName("SYS_C008833");
 
                 entity.ToTable("CONTACTUS");
 
@@ -73,10 +74,10 @@ namespace TheFinalProject.core.Data
             {
                 entity.ToTable("CREDENTIALS");
 
-                entity.HasIndex(e => e.Email, "SYS_C008581")
+                entity.HasIndex(e => e.Email, "SYS_C008795")
                     .IsUnique();
 
-                entity.HasIndex(e => e.UserId, "SYS_C008582")
+                entity.HasIndex(e => e.UserId, "SYS_C008796")
                     .IsUnique();
 
                 entity.Property(e => e.CredentialId)
@@ -288,6 +289,56 @@ namespace TheFinalProject.core.Data
                     .HasColumnName("HOME_PAGEID");
             });
 
+            modelBuilder.Entity<Reservation>(entity =>
+            {
+                entity.ToTable("RESERVATIONS");
+
+                entity.Property(e => e.ReservationId)
+                    .HasColumnType("NUMBER")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnName("RESERVATION_ID");
+
+                entity.Property(e => e.HallId)
+                    .HasColumnType("NUMBER")
+                    .HasColumnName("HALL_ID");
+
+                entity.Property(e => e.ReservationDate)
+                    .HasPrecision(6)
+                    .HasColumnName("RESERVATION_DATE")
+                    .HasDefaultValueSql("systimestamp");
+
+                entity.Property(e => e.ReservationNotes)
+                    .HasMaxLength(2000)
+                    .IsUnicode(false)
+                    .HasColumnName("RESERVATION_NOTES");
+
+                entity.Property(e => e.StatusId)
+                    .HasColumnType("NUMBER")
+                    .HasColumnName("STATUS_ID");
+
+                entity.Property(e => e.UserId)
+                    .HasColumnType("NUMBER")
+                    .HasColumnName("USER_ID");
+
+                entity.HasOne(d => d.Hall)
+                    .WithMany(p => p.Reservations)
+                    .HasForeignKey(d => d.HallId)
+                    .OnDelete(DeleteBehavior.SetNull)
+                    .HasConstraintName("HRFOREIGN_KEY");
+
+                entity.HasOne(d => d.Status)
+                    .WithMany(p => p.Reservations)
+                    .HasForeignKey(d => d.StatusId)
+                    .OnDelete(DeleteBehavior.SetNull)
+                    .HasConstraintName("RSFOREIGN_KEY");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.Reservations)
+                    .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .HasConstraintName("RUFOREIGN_KEY");
+            });
+
             modelBuilder.Entity<Role>(entity =>
             {
                 entity.ToTable("ROLES");
@@ -396,11 +447,11 @@ namespace TheFinalProject.core.Data
             modelBuilder.Entity<VisaChecker>(entity =>
             {
                 entity.HasKey(e => e.VisaChecherId)
-                    .HasName("SYS_C008600");
+                    .HasName("SYS_C008821");
 
                 entity.ToTable("VISA_CHECKER");
 
-                entity.HasIndex(e => e.CardNumber, "SYS_C008601")
+                entity.HasIndex(e => e.CardNumber, "SYS_C008822")
                     .IsUnique();
 
                 entity.Property(e => e.VisaChecherId)
@@ -429,14 +480,14 @@ namespace TheFinalProject.core.Data
             modelBuilder.Entity<Visainfo>(entity =>
             {
                 entity.HasKey(e => e.PaymentId)
-                    .HasName("SYS_C008592");
+                    .HasName("SYS_C008813");
 
                 entity.ToTable("VISAINFO");
 
-                entity.HasIndex(e => e.CardNumber, "SYS_C008593")
+                entity.HasIndex(e => e.CardNumber, "SYS_C008814")
                     .IsUnique();
 
-                entity.HasIndex(e => e.UserId, "SYS_C008594")
+                entity.HasIndex(e => e.UserId, "SYS_C008815")
                     .IsUnique();
 
                 entity.Property(e => e.PaymentId)
