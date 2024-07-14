@@ -1,3 +1,8 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using TheFinalProject.core.Authentication;
 using TheFinalProject.core.ICommon;
 using TheFinalProject.core.IRepositories;
 using TheFinalProject.core.IServices;
@@ -21,14 +26,41 @@ namespace TheFinalProject.API
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddScoped<IDbContext, DbContext>();
-
             //REpository 
-            builder.Services.AddScoped<IHallRepository,HallRepository>();
+            builder.Services.AddScoped<IHallRepository, HallRepository>();
             builder.Services.AddScoped<IVisaInfoRepository, VisaInfoRepository>();
+            builder.Services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
+            builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 
-            //Services
-            builder.Services.AddScoped<IHallService,HallService>();
-            builder.Services.AddScoped<IVisaInfoService, VisaInfoService>();
+            builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+            builder.Services.AddScoped<IUsersService, UsersService>();
+
+            var jwtsettings = new JwtSettings();
+
+            builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+
+            builder.Configuration.Bind(JwtSettings.jwtSettings, jwtsettings);
+            builder.Services.AddSingleton(Options.Create(jwtsettings));
+
+            builder.Services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new()
+                {
+                    ValidateIssuerSigningKey = true,
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidIssuer = jwtsettings.Issuer,
+                    ValidAudience = jwtsettings.Audience,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtsettings.SecretKey))
+                };
+            });
 
             var app = builder.Build();
 
@@ -40,6 +72,7 @@ namespace TheFinalProject.API
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllers();
