@@ -7,7 +7,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { CardModule } from 'primeng/card';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CheckboxModule } from 'primeng/checkbox';
+import { FloatLabelModule } from 'primeng/floatlabel';
 @NgModule({
   declarations: [NavBarWebisteComponent],
   imports: [
@@ -17,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MenubarModule,
     InputTextModule,
     CardModule,
+    FloatLabelModule,
   ],
   exports: [
     ButtonModule,
@@ -25,6 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavBarWebisteComponent,
     InputTextModule,
     CardModule,
+    FloatLabelModule,
+    CheckboxModule,
   ],
 })
 export class SharedModule {}
