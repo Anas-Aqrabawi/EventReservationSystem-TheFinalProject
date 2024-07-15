@@ -7,6 +7,152 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\package.json" />
+    <Content Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\_metadata.json" />
+    <Content Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\package.json" />
+    <Content Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\_metadata.json" />
+    <Content Include="HallReservationUI\HallReservation\.vscode\extensions.json" />
+    <Content Include="HallReservationUI\HallReservation\.vscode\launch.json" />
+    <Content Include="HallReservationUI\HallReservation\.vscode\tasks.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\HallReservation\.tsbuildinfo" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\HallReservation\angular-compiler.db" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\HallReservation\angular-compiler.db-lock" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\%40angular_common.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\%40angular_common.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\%40angular_core.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\%40angular_core.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\%40angular_forms.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\%40angular_forms.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\%40angular_platform-browser.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\%40angular_platform-browser.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\%40angular_platform-browser_animations.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\%40angular_platform-browser_animations.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\%40angular_router.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\%40angular_router.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-7PGKQC7M.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-7PGKQC7M.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-EM2W3O42.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-EM2W3O42.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-FWH7LSV5.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-FWH7LSV5.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-HTTIMA4M.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-HTTIMA4M.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-P3UV2JNL.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-P3UV2JNL.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-PVNJFIAE.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-PVNJFIAE.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-ZMAEPQRD.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\chunk-ZMAEPQRD.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\primeng_button.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\primeng_button.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\primeng_card.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\primeng_card.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\primeng_inputtext.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\primeng_inputtext.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\primeng_menubar.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps\primeng_menubar.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_common.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_common.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_core.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_core.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_forms.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_forms.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_platform-browser.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_platform-browser.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_platform-browser_animations.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_platform-browser_animations.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_platform-server.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_platform-server.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_router.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\%40angular_router.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-6OTRMA4L.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-6OTRMA4L.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-JBM6G2HU.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-JBM6G2HU.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-KKSCXERX.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-KKSCXERX.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-MTF3S2NU.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-MTF3S2NU.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-NQ4HTGF6.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-NQ4HTGF6.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-VT4BV2NP.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-VT4BV2NP.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-W2UNMY3N.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-W2UNMY3N.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-WIALKPXA.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-WIALKPXA.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-X7JYFJU7.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\chunk-X7JYFJU7.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\primeng_button.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\primeng_button.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\primeng_card.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\primeng_card.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\primeng_inputtext.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\primeng_inputtext.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\primeng_menubar.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\primeng_menubar.js.map" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\xhr2-AQ42KH57.js" />
+    <None Include="HallReservationUI\HallReservation\.angular\cache\18.1.0\vite\deps_ssr\xhr2-AQ42KH57.js.map" />
+    <None Include="HallReservationUI\HallReservation\.git\COMMIT_EDITMSG" />
+    <None Include="HallReservationUI\HallReservation\.git\config" />
+    <None Include="HallReservationUI\HallReservation\.git\description" />
+    <None Include="HallReservationUI\HallReservation\.git\HEAD" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\applypatch-msg.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\commit-msg.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\post-update.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\pre-applypatch.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\pre-commit.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\pre-merge-commit.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\pre-push.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\pre-rebase.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\pre-receive.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\push-to-checkout.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\sendemail-validate.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\hooks\update.sample" />
+    <None Include="HallReservationUI\HallReservation\.git\index" />
+    <None Include="HallReservationUI\HallReservation\.git\info\exclude" />
+    <None Include="HallReservationUI\HallReservation\.git\logs\HEAD" />
+    <None Include="HallReservationUI\HallReservation\.git\logs\refs\heads\master" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\00\074afcb08a8f50723d3e9e7cae977d12022e10" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\02\972627f8df364102ce4ede71c8bd5f3660e1d8" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\10\d066f35a22aa8094b8d517242f3434a174f868" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\14\1a46e6759a05926b01c6a0a5a0f8bf62bcbebc" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\1d\335a673ea4ffd8f0f8df294a85d4411ff911a2" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\29\27c6a9570746237062f8a25d8f45aa3093bb5e" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\2a\bd84d5d504c75daa0a8b6bfc03290ce0a05704" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\36\093e1879779624f181733152bb55d71a711d3b" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\45\1828560cfae1674ba49ca830a7ecc50b9d19be" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\57\614f9c967596fad0a3989bec2b1deff33034f6" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\59\d9a3a3e73ffc640517ef488f6f89d6270195d1" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\5a\17151774b88c7eefa6812fa4ff6fd54bb292de" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\5a\7df0935abbd955011c96e430b9e9f367b5848b" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\5f\b748d9207a99686549d6ef1415527dc544dd0f" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\77\b374577de83b86d846eadda2dd17532d7dabaa" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\79\5380cd229465cf77e7b9aa1b7f7cb02c2ad905" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\88\cfd51f38cff7f3f89a86ddc79edc0071d0bf45" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\90\d4ee0072ce3fc41812f8af910219f9eea3c3de" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\92\5af837050a4abe679c5fea0df7e41faf6fc011" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\a0\6d9e8b06b43b31709a82f7cfed1231ef07a502" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\a2\98b5bd8796ac377fe9ed64caa249e24c7ec3b6" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\b3\f1ecf44a54372bf90afbb60491417242b8769c" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\bd\88cd6145834eac2e6f335579b3f021b3b360a8" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\cc\7b141350ffde43afce3ec16ea4d7b5007cde2b" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\cd\c0b287f5dcddd808e55e1729efd6742fc621b6" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\d3\dbc4a2dd116ddac645f9dae2fb11103ff5c683" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\df\b6fdb3f1f0020a0642da8b667593c20dc45546" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\ee\11bdf95444a33f3859d6729deb83dc2167519a" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\f7\9e030edfd4802e452af7d3669a058d7e5a7fd1" />
+    <None Include="HallReservationUI\HallReservation\.git\objects\fe\597e21e15fabf644183df13dc21b831882b45a" />
+    <None Include="HallReservationUI\HallReservation\.git\refs\heads\master" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.32">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -18,6 +164,12 @@
   <ItemGroup>
     <ProjectReference Include="..\TheFinalProject.core\TheFinalProject.core.csproj" />
     <ProjectReference Include="..\TheFinalProject.infra\TheFinalProject.infra.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="HallReservationUI\HallReservation\.git\objects\info\" />
+    <Folder Include="HallReservationUI\HallReservation\.git\objects\pack\" />
+    <Folder Include="HallReservationUI\HallReservation\.git\refs\tags\" />
   </ItemGroup>
 
 </Project>
