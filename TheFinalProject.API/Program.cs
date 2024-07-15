@@ -64,10 +64,10 @@ namespace TheFinalProject.API
 
             //REpository 
             builder.Services.AddScoped<IHallRepository,HallRepository>();
-
+            builder.Services.AddScoped<IReservationRespository,ReservationRepository>();
             //Services
             builder.Services.AddScoped<IHallService,HallService>();
-
+            builder.Services.AddScoped<IReservationService,ReservationService>();
 
             var app = builder.Build();
 

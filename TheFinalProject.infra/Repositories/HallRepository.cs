@@ -55,7 +55,7 @@ namespace TheFinalProject.infra.Repositories
         public async Task DeleteHall(int id)
         {
             var param = new DynamicParameters();
-            param.Add("hallID", id, DbType.Int32, ParameterDirection.Input);
+            param.Add("hallID", id,dbType: DbType.Int32,direction: ParameterDirection.Input);
             await _dbContext.Connection.ExecuteAsync("Hall_package.DeleteHall", param, commandType: CommandType.StoredProcedure);
         }
 
@@ -69,7 +69,7 @@ namespace TheFinalProject.infra.Repositories
         public async Task<Hall> GetHallById(int id)
         {
             var param = new DynamicParameters();
-            param.Add("hallID", id, DbType.Int32, ParameterDirection.Input);
+            param.Add("hallID", id, dbType: DbType.Int32, direction: ParameterDirection.Input);
 
             var result = await _dbContext.Connection.QueryAsync<Hall>("Hall_package.GetHallById", param, commandType: CommandType.StoredProcedure);
             return result?.FirstOrDefault();

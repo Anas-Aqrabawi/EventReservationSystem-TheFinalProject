@@ -5,15 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using TheFinalProject.core.Data;
 
-namespace TheFinalProject.core.IRepositories
+namespace TheFinalProject.core.IServices
 {
-    public interface IReservationRespository
+    public interface IReservationService
     {
         Task CreateReservation(Reservation reservation);
         Task UpdateReservation(Reservation reservation);
         Task DeleteReservation(int reservationId);
-        Task<Reservation> GetReservationByUserId(int userId);
+        Task<Reservation> GetReservationByUserId(int userID);
         Task<Reservation> GetReservationById(int id);
-
     }
 }
