@@ -42,6 +42,15 @@ namespace TheFinalProject.API
             builder.Configuration.Bind(JwtSettings.jwtSettings, jwtsettings);
             builder.Services.AddSingleton(Options.Create(jwtsettings));
 
+            builder.Services.AddCors(coreOptions =>
+            {
+                coreOptions.AddPolicy("policy",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                    });
+            });
+
             builder.Services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -81,7 +90,7 @@ namespace TheFinalProject.API
 
             app.UseAuthentication();
             app.UseAuthorization();
-
+            app.UseCors("policy");
             app.MapControllers();
 
             app.Run();
